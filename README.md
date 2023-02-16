@@ -6,6 +6,7 @@ Instalar:
 - polybar
 - neovim
 - wezterm
+- feh (wallpaper)
 
 Colocar la carpeta dotfiles en el home directory y realizar los siguientes symlink
 
