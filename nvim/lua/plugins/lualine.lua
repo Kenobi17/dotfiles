@@ -23,7 +23,20 @@ return {
         { "filename", path = 1, symbols = { modified = "  ", readonly = "", unnamed = "" } },
       },
       lualine_x = {
-        { "location", padding = { left = 0, right = 1 } },
+        "location",
+        {
+          padding = { left = 1, right = 1 },
+          function()
+            local starts = vim.fn.line("v")
+            local ends = vim.fn.line(".")
+            local count = starts <= ends and ends - starts + 1 or starts - ends + 1
+            local wc = vim.fn.wordcount()
+            return count .. ":" .. wc["visual_chars"]
+          end,
+          cond = function()
+            return vim.fn.mode():find("[Vv]") ~= nil
+          end,
+        },
       },
       lualine_y = {
         function()
