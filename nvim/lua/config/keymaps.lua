@@ -34,3 +34,6 @@ map("v", "<leader>d", '""d', { desc = "Cut" })
 
 -- Exit insert mode with JK
 map("i", "jk", "<ESC>", { desc = "Exit insert mode" })
+
+-- Delete all opened buffers
+map("n", "<leader>bX", "<cmd>%bdelete | Neotree toggle current reveal_force_cwd <cr>", { desc = "Delete all buffers" })
