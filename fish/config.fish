@@ -3,7 +3,7 @@ if status is-interactive
 end
 
 set -gx BROWSER brave
-
+set PATH $HOME/.local/share/bob/nvim-bin $PATH
 alias ll='ls -la'
 alias rs='shutdown -r now'
 alias v='nvim'
