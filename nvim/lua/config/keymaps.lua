@@ -21,16 +21,17 @@ map("n", "<C-u>", "<C-u>zz")
 -- Paste over highlighted without losing what's in clipboard
 map("x", "<leader>p", '"_dP')
 
--- Delete without yanking, cut with <leader>
-map("n", "x", '"_x')
-map("n", "X", '"_X')
-map("n", "d", '"_d')
-map("n", "D", '"_D')
-map("v", "d", '"_d')
+-- Copy to system clipboard
+map("n", "<leader>y", '"+y')
+map("v", "<leader>y", '"+y')
+map("n", "<leader>Y", '"+y')
+map("v", "<leader>Y", '"+y')
 
-map("n", "<leader>d", '""d', { desc = "Cut" })
-map("n", "<leader>D", '""D', { desc = "Cut" })
-map("v", "<leader>d", '""d', { desc = "Cut" })
+-- Delete without yanking
+map("n", "<leader>d", '"_d')
+map("v", "<leader>d", '"_d')
+map("n", "<leader>D", '"_d')
+map("v", "<leader>D", '"_d')
 
 -- Exit insert mode with JK
 map("i", "jk", "<ESC>", { desc = "Exit insert mode" })
