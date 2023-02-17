@@ -2,6 +2,7 @@ local wezterm = require("wezterm")
 
 return {
 	font = wezterm.font("Hack Nerd Font"),
+	font_size = 18,
 	color_scheme = "tokyonight",
 	use_fancy_tab_bar = false,
 	tab_bar_at_bottom = true,

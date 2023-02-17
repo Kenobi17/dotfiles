@@ -50,7 +50,7 @@ return {
       },
     },
     inactive_sections = {
-      lualine_a = { "branch" },
+      lualine_a = { "mode" },
       lualine_b = {
         {
           "diagnostics",
