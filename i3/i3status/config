@@ -9,10 +9,10 @@ general {
 	markup = "pango"
 	separator = " "
 	colors = true
-	color_good = "#A31E6E"
-	color_degraded = "#178579"
-	color_bad = "#195D6B"
-	color_separator = "#2e2138"
+	color_good = "#A5212A"
+	color_degraded = "#DE2027"
+	color_bad = "#8E0C30"
+	color_separator = "#371b33"
 }
 
 ##-- Modules Order ---------------------

@@ -4,5 +4,5 @@
 ##
 ## Apply wallpaper on i3 startup
 
-WALLPAPER='/home/kenobi/.config/i3/themes/gotham/wallpaper.jpg'
+WALLPAPER='/home/kenobi/.config/i3/themes/hotline/hotline.png'
 hsetroot -fill "$WALLPAPER"

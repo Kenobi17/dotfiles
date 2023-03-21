@@ -7,6 +7,7 @@ Instalar:
 - fd
 - tmux
 - ripgrep
+- JetBrainsMono Nerd Font
 
 
 Colocar la carpeta dotfiles en el home directory y realizar los siguientes symlink

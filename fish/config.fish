@@ -4,7 +4,7 @@ end
 
 set -gx BROWSER brave
 set PATH $HOME/.local/share/bob/nvim-bin $PATH
-alias ll='ls -la'
+alias ll='ls -lA'
 alias rs='shutdown -r now'
 alias v='nvim'
 alias dip='dunstctl is-paused'

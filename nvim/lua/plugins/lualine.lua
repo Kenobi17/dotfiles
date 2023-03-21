@@ -4,7 +4,7 @@ return {
   opts = {
     options = {
       globalstatus = false,
-      theme = "tokyonight",
+      theme = "gruvbox",
     },
     sections = {
       lualine_a = { "mode" },
