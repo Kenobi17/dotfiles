@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+notify="notify-send -u low dunst"
+
+case $(dunstctl is-paused) in
+true)
+	dunstctl set-paused false
+	$notify "NOTIFICATIONS ARE ENABLED"
+	;;
+false)
+	$notify "NOTIFICATIONS ARE PAUSED"
+	(sleep 3 && dunstctl set-paused true) &
+	;;
+esac
