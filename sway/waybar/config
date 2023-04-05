@@ -1,5 +1,3 @@
-// Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
-//
 // Waybar config file
 {
     "include": "~/.config/sway/waybar/modules",
@@ -9,7 +7,7 @@
     "mode": "dock", 				// Display mode (dock|hide|invisible|overlay)
     "exclusive": true, 				// Request an exclusive zone from the compositor
     "passthrough": false, 			// Pass any pointer events to the window under the bar
-    "position": "top", 				// Waybar position (top|bottom|left|right)
+    "position": "bottom", 				// Waybar position (top|bottom|left|right)
     "height": 32, 					// Waybar height (to be removed for auto height)
     "width": "", 					// Waybar width (empty for auto width)
     "spacing": 6, 					// Gaps between modules
@@ -21,7 +19,7 @@
     "fixed-center": true, 			// Center modules position
     "ipc": true, 					// Control waybar with `swaymsg bar` commands
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
-    "modules-center": ["mpd"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "backlight", "network", "battery", "clock", "tray"],
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["pulseaudio", "backlight", "network", "battery", "clock", "tray"],
 }

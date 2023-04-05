@@ -1,5 +1,3 @@
-// Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
-//
 // Waybar modules configuration
 {
 	// waybar-backlight
@@ -34,14 +32,14 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%",
+        "format": "{icon}  {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-full": "{icon} Full",
         //"format-good": "",
         "format-alt": "{icon} {time}",
         "format-icons": ["", "", "", "", ""],
-        "format-time": "{H}h {M}min",
+        "format-time": " {H}h {M}min",
         "tooltip": true,
     },
 
@@ -49,13 +47,12 @@
 
 	// waybar-clock
     "clock": {
-		"interval": 60,
-		"align": 0,
-		"rotate": 0,
-        //"timezone": "America/New_York",
-        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": " {:%I:%M %p}",
-        "format-alt": " {:%a %b %d, %G}"
+			"interval": 60,
+			"align": 0,
+			"rotate": 0,
+			"tooltip-format": "<big>{:%B %Y}</big>\n<tt><big>{calendar}</big></tt>",
+			"format": " {:%I:%M %p}",
+			"format-alt": "  {:%a %b %d, %G}"
     },
 
 	// waybar-cpu
@@ -65,8 +62,8 @@
     "idle_inhibitor": {
          "format": "{icon}",
          "format-icons": {
-             "activated": "",
-             "deactivated": ""
+             "activated": " ",
+             "deactivated": " "
          },
          "timeout": 30
     },
@@ -104,7 +101,7 @@
     "network": {
 		"interval": 5,
         //"interface": "wlan*", // (Optional) To force the use of this interface, set it for netspeed to work
-        "format-wifi": " {essid}",
+        "format-wifi": "  {essid}",
         "format-ethernet": " {ipaddr}/{cidr}",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "睊 Disconnected",
@@ -151,7 +148,7 @@
 	// waybar-sway-window
     "sway/window": {
         "format": "{}",
-        "max-length": 50,
+        "max-length": 80,
         "icon": false,
     },
 
@@ -162,16 +159,26 @@
          "all-outputs": true,
          "format": "{icon}",
          "format-icons": {
-             "1": "",
-             "2": "",
-             "3": "",
-             "4": "",
-             "5": "",
-             "6": "漣",
-             "7": "",
-             "8": "",
-             "9": "",
-             "10": "ﳴ",
+             "1": "1",
+             "2": "2",
+             "3": "3",
+             "4": "4",
+             "5": "5",
+             "6": "6",
+             "7": "7",
+             "8": "8",
+             "9": "9",
+             "10": "10",
+             /* "1": "", */
+             /* "2": "", */
+             /* "3": "", */
+             /* "4": "", */
+             /* "5": "", */
+             /* "6": "漣", */
+             /* "7": "", */
+             /* "8": "", */
+             /* "9": "", */
+             /* "10": "ﳴ", */
              "urgent": "",
              "focused": "",
              "default": ""

@@ -1,18 +1,16 @@
-/* 
- * Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
-*/
-
 /** ********** Fonts ********** **/
 * {
-    font-family: "JetBrains Mono", "Iosevka Nerd Font", archcraft, sans-serif;
-    font-size: 12px;
+    font-family: "JetBrainsMono Nerd Font", "Iosevka Nerd Font", archcraft, sans-serif;
+    font-size: 14px;
 }
 
 /** ********** Waybar Window ********** **/
 window#waybar {
-    background-color: #1B1F28;
-	color: #1B1F28;
-    border-bottom: 2px solid #2F333C;
+    /* background-color: #1B1F28; */
+    background-color: rgba(255, 255, 255, 0);
+		color: #1B1F28;
+    /* border-bottom: 2px solid #2F333C; */
+    border-bottom: 0px solid rgba(255, 255, 255, 0);
     transition-property: background-color;
     transition-duration: .5s;
 }
