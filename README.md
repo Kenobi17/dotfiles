@@ -1,4 +1,4 @@
-Mis dotfiles / configuraciones para poder utilizar directo dentro de archcraft i3wm premium.
+Dotfiles para vanilla arch
 
 Instalar: 
 
@@ -8,15 +8,16 @@ Instalar:
 - tmux
 - ripgrep
 - JetBrainsMono Nerd Font
-
+- TODO: Completar lista de dependencias a instalar
 
 Colocar la carpeta dotfiles en el home directory y realizar los siguientes symlink
 
 ```bash
-ln -s $HOME/dotfiles/i3 $HOME/.config/
+ln -s $HOME/dotfiles/sway $HOME/.config/
 ln -s $HOME/dotfiles/nvim $HOME/.config/
 ln -s $HOME/dotfiles/fish $HOME/.config/
-ln -s $HOME/dotfiles/alacritty $HOME/.config/
+ln -s $HOME/dotfiles/foot $HOME/.config/
+ln -s $HOME/dotfiles/gtk-3.0 $HOME/.config
 ln -s $HOME/dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 ln -s $HOME/dotfiles/tmux/.tmux.conf.local $HOME/.tmux.conf.local
 ```

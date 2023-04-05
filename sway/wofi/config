@@ -1,9 +1,5 @@
 ## Wofi Config
 
-## Files (absolute path)
-# style=/home/$USER/.config/sway/wofi/style.css
-# color=/home/$USER/.config/sway/wofi/colors
-
 ## General
 show=drun
 prompt=Apps

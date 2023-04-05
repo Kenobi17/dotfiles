@@ -36,12 +36,12 @@ client.background        $i3_cl_col_bg
 # client.placeholder      	#1E222A #1E222A #FFFFFF #1E222A   #1E222A
 # client.background       	#1E2128
 
-##-- Gtk themes ------------------------------
+#-- Gtk themes ------------------------------
 set $gnome-schema org.gnome.desktop.interface
-
-# exec_always {
-exec_always  gsettings set $gnome-schema gtk-theme 'Arc-Dark'
-exec_always  gsettings set $gnome-schema icon-theme 'ZafiroDark'
-exec_always  gsettings set $gnome-schema cursor-theme 'Qogir-dark'
-exec_always  gsettings set $gnome-schema font-name 'JetBrainsMono 10'
-# 
+seat seat0 xcursor_theme 'Qogir'
+exec_always {
+  gsettings set $gnome-schema gtk-theme 'Arc-Dark'
+  gsettings set $gnome-schema icon-theme 'zafiro'
+  gsettings set $gnome-schema cursor-theme 'Qogir'
+  gsettings set $gnome-schema font-name 'JetBrainsMono Nerd Font 14'
+}

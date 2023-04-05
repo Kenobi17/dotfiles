@@ -19,6 +19,9 @@ done
 # Lauch statusbar (waybar)
 ~/.config/sway/scripts/statusbar &
 
+# Lauch gtk themes
+~/.config/sway/scripts/gtk &
+
 # Start network manager applet
 nm-applet --indicator &
 
