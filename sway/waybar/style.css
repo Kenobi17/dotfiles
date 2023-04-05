@@ -30,12 +30,12 @@ window#waybar.geany {
 
 /** ********** Backlight ********** **/
 #backlight {
-	background-image: linear-gradient(to right, #98C379 , #C778DD);
+	background-image: linear-gradient(to right, #B00C4A , #E10F45);
 }
 
 /** ********** Battery ********** **/
 #battery {
-	background-image: linear-gradient(to right, #55B6C2 , #E06B74);
+	background-image: linear-gradient(to right, #F1936B , #E52B27);
 }
 
 #battery.charging {
@@ -62,7 +62,7 @@ window#waybar.geany {
 
 /** ********** Clock ********** **/
 #clock {
-	background-image: linear-gradient(to right, #E06B74 , #62AEEF);
+	background-image: linear-gradient(to right, #E52B27 , #A90E28);
 }
 
 /** ********** Sway ********** **/
@@ -144,7 +144,7 @@ window#waybar.empty #window {
 /** ********** Tray ********** **/
 #tray {
 	/* background-color: #FFFFFF; */
-	background-image: linear-gradient(to right, #62AEEF, #E06B74);
+	background-image: linear-gradient(to right, #A90E28, #490D30);
 	/* background-color: rgba(255, 255, 255, 0); */
 	color: #FFF;
 	margin: 6px 0px;
@@ -194,7 +194,7 @@ window#waybar.empty #window {
 
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-	background-image: linear-gradient(to right, #62AEEF , #98C379);
+	background-image: linear-gradient(to right, #880B46 , #B00C4A);
 }
 
 #pulseaudio.bluetooth {
@@ -206,7 +206,7 @@ window#waybar.empty #window {
 
 /** ********** Network ********** **/
 #network {
-	background-image: linear-gradient(to right, #C778DD , #55B6C2);
+	background-image: linear-gradient(to right, #E10F45 , #F1936B);
 }
 
 #network.disconnected {
