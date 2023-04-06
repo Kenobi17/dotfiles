@@ -12,8 +12,11 @@ alias tkx='tmux kill-server'
 alias tls='tmux ls'
 alias tks='tmux kill-session -t'
 alias st='shutdown -h now'
-alias d='cd $(fd . '~' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo )'
-alias D='cd $(fd . '/' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo )'
-alias f='fd . '~' --type f --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs nvim'
-alias F='fd . '/' --type f --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs nvim'
+
+alias da='cd $(fd . '~' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo )'
+alias d='cd $(fd . '~' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux --reverse | xargs echo )'
+
+alias Da='cd $(fd . '/' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo )'
+alias D='cd $(fd . '/' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux --reverse | xargs echo )'
+
 alias nv='cd $(fd . '/' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo ) && nvim .'

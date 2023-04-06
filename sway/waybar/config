@@ -19,7 +19,7 @@
     "fixed-center": true, 			// Center modules position
     "ipc": true, 					// Control waybar with `swaymsg bar` commands
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "backlight", "network", "battery", "clock", "tray"],
+    "modules-left": ["cpu", "memory", "disk", "idle_inhibitor"],
+    "modules-center": ["sway/workspaces"],
+    "modules-right": ["sway/mode", "pulseaudio", "backlight",  "battery", "network", "clock", "tray"],
 }

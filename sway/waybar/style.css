@@ -33,9 +33,18 @@ window#waybar.geany {
 	background-image: linear-gradient(to right, #B00C4A , #E10F45);
 }
 
+/** ********** Cpu ********** **/
+#cpu {
+	background-image: linear-gradient(to right, #B00C4A , #E10F45);
+}
+
+/** ********** Disk ********** **/
+#disk {
+	background-image: linear-gradient(to right, #F1936B , #E52B27);
+}
 /** ********** Battery ********** **/
 #battery {
-	background-image: linear-gradient(to right, #F1936B , #E52B27);
+	background-image: linear-gradient(to right, #E10F45 , #F1936B);
 }
 
 #battery.charging {
@@ -67,20 +76,19 @@ window#waybar.geany {
 
 /** ********** Sway ********** **/
 #workspaces {
-	background-color: #2F333C;
+	background-image: linear-gradient(to right, #A90E28, #880B46);
 	color: #FFFFFF;
-	/* border-radius: 0px 12px 0px 0px; */
 	border-radius: 12px;
 	padding: 4px;
 }
 
 #workspaces button {
-	color: #FFFFFF;
+	color: #000000;
 	padding: 2px 6px;
 }
 
 #workspaces button:hover {
-	background-color: #1B1F28;
+	background-image: linear-gradient(to right, #A90E28, #490D30);
 	color: #FFFFFF;
 	border: 0px solid #1B1F28;
 	border-radius: 12px;
@@ -88,26 +96,26 @@ window#waybar.geany {
 }
 
 #workspaces button.visible {
-	background-image: linear-gradient(to right, #62AEEF , #98C379);
+	/* background-image: linear-gradient(to right, #62AEEF , #98C379); */
 }
 
 #workspaces button.focused {
-	background-image: linear-gradient(to right, #E06B74 , #C778DD);
+	/* background-image: linear-gradient(to right, #F1936B , #E52B27); */
 }
 
 #workspaces button.urgent {
-	background-image: linear-gradient(to right, #E06B74 , #E5C07A);
+	/* background-image: linear-gradient(to right, #E06B74 , #E5C07A); */
 }
 
 #workspaces button.persistent {
-	background-image: linear-gradient(to right, #E5C07A , #C778DD);
+	/* background-image: linear-gradient(to right, #E5C07A , #C778DD); */
 }
 
 #workspaces button.visible,
 #workspaces button.focused,
 #workspaces button.urgent,
 #workspaces button.persistent {
-	color: #1B1F28;
+	color: #F1936B;
 	border-radius: 12px;
 	padding: 2px 6px;
 }
@@ -184,12 +192,18 @@ window#waybar.empty #window {
 #mpd.paused {
 }
 
+/** ********** Memory ********** **/
+
+#memory {
+	background-image: linear-gradient(to right, #E10F45 , #F1936B);
+}
+
 /** ********** Idle Inhibitor ********** **/
 #idle_inhibitor {
-	background-image: linear-gradient(to right, #E5C07A, #62AEEF);
+	background-image: linear-gradient(to right, #E52B27 , #A90E28);
 }
 #idle_inhibitor.deactivated {
-	background-image: linear-gradient(to right, #E06B74 , #E5C07A);
+	background-image: linear-gradient(to right, #E52B27 , #A90E28);
 }
 
 /** ********** Pulseaudio ********** **/
@@ -206,10 +220,10 @@ window#waybar.empty #window {
 
 /** ********** Network ********** **/
 #network {
-	background-image: linear-gradient(to right, #E10F45 , #F1936B);
+	background-image: linear-gradient(to right, #F1936B , #E52B27);
 }
 
-#network.disconnected {
+#ntwork.disconnected {
 	background-image: linear-gradient(to right, #E06B74 , #E5C07A);
 }
 #network.disabled {
@@ -227,6 +241,9 @@ window#waybar.empty #window {
 #backlight, 
 #battery,
 #clock,
+#cpu,
+#memory,
+#disk,
 #idle_inhibitor,
 #mode,
 #window,

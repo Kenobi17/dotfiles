@@ -56,8 +56,16 @@
     },
 
 	// waybar-cpu
+		"cpu": {
+			"interval": 1,
+			"format": "󰻠 {usage}%"
+		},
 	// waybar-custom
 	// waybar-disk
+		"disk": {
+			"interval": 60,
+			"format": "󰋊 {used}/ {total}",
+		},
 	// waybar-idle-inhibitor
     "idle_inhibitor": {
          "format": "{icon}",
@@ -71,7 +79,11 @@
 	// waybar-inhibitor
 	// waybar-keyboard-state
 	// waybar-memory
-
+		"memory": {
+			"interval": 1,
+			"format": "󰍛 {used}GiB / {total}GiB",
+			"format-alt": "󰍛 {swapUsed} GiB / {swapTotal} GiB - SWAP",
+		},
 	// waybar-mpd
     "mpd": {
         "interval": 2,
