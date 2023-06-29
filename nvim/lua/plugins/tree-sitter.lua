@@ -23,6 +23,7 @@ return {
       "typescript",
       "vim",
       "yaml",
+      "prisma",
     },
     incremental_selection = {
       enable = true,

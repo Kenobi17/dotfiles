@@ -15,3 +15,10 @@ alias st='shutdown -h now'
 alias d='cd $(fd . '/' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo )'
 alias f='fd . '/' --type f --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 alias nv='cd $(fd . '/' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo ) && nvim .'
+
+# pnpm
+set -gx PNPM_HOME "/home/kenobi/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
