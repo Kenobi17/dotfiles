@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+CONFIG="$HOME/.config/foot/foot.ini"
+
+foot --config="$CONFIG" ranger

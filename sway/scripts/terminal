@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+CONFIG="$HOME/.config/foot/foot.ini"
+
+if [ "$1" == "--ranger"]; then
+	foot --config="$CONFIG" ranger
+elif [ "$1" == "--btop"]; then
+	foot --config="$CONFIG" btop
+elif [ "$1" == "-f" ]; then
+	foot --app-id='foot-float' --config="$CONFIG" tmux attach
+elif [ "$1" == "-f-new" ]; then
+	foot --app-id='foot-float' --config="$CONFIG" tmux
+elif [ "$1" == "-new" ]; then
+	foot --config="$CONFIG" tmux
+else
+	foot --config="$CONFIG" tmux attach
+fi

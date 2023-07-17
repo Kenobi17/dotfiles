@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+## Wofi Powermenu
+
+## Files
+CONFIG="$HOME/.config/sway/wofi/config"
+STYLE="$HOME/.config/sway/wofi/style.css"
+COLORS="$HOME/.config/sway/wofi/colors"
+
+## Wofi Command
+wofi_command="wofi --show dmenu \
+			--conf ${CONFIG} --style ${STYLE} --color ${COLORS} \
+			--width=300 --height=205 \
+			--cache-file=/dev/null \
+			--hide-scroll --no-actions \
+			--define=matching=fuzzy"
+
+uptime=$(uptime -p | sed -e 's/up //g')
+
+## Entries
+shutdown=" Shutdown"
+reboot=" Restart"
+lock=" Lock"
+suspend=" Sleep"
+logout=" Logout"
+
+# Variable passed to rofi
+open_menu() {
+	options="$lock\n$suspend\n$logout\n$reboot\n$shutdown"
+
+	chosen="$(echo -e "$options" | $wofi_command --prompt "UP - $uptime")"
+	case $chosen in
+	$shutdown)
+		systemctl poweroff
+		;;
+	$reboot)
+		systemctl reboot
+		;;
+	$lock)
+		~/.config/sway/scripts/lockscreen
+		;;
+	$suspend)
+		mpc -q pause
+		pulsemixer --mute
+		~/.config/sway/scripts/lockscreen
+		systemctl suspend
+		;;
+	$logout)
+		swaymsg exit
+		;;
+	esac
+}
+
+if [[ ! $(pidof wofi) ]]; then
+	open_menu
+else
+	pkill wofi
+fi
