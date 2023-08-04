@@ -10,10 +10,10 @@ normal = "block"
 select = "underline"
 
 [editor.statusline]
-left = ["mode", "spinner"]
-center = ["file-name"]
-right = ["diagnostics", "selections", "position", "file-type"]
-separator = "│"
+left = ["mode", "workspace-diagnostics", "diagnostics"]
+center = ["file-name", "separator", "spacer", "version-control", "file-modification-indicator"]
+right = [ "spinner","position-percentage", "spacer", "separator", "position"]
+separator = "|"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
