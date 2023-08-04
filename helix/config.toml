@@ -64,6 +64,9 @@ q = ":quit"
 a = "code_action"
 c = "toggle_comments"
 d = ":reset-diff-change"
+r = ":lsp-restart"
+o = ":config-open"
+R = ":config-reload"
 
 
 [keys.select.space.c]
