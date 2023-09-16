@@ -73,7 +73,7 @@
              "activated": " ",
              "deactivated": " "
          },
-         "timeout": 30
+         "timeout": 120
     },
 
 	// waybar-inhibitor
@@ -191,8 +191,8 @@
              /* "8": "", */
              /* "9": "", */
              /* "10": "ﳴ", */
-             "urgent": "",
-             "focused": "",
+             /* "urgent": "",*/
+             /* "focused": "", */
              "default": ""
          },
         "smooth-scrolling-threshold": 1,
