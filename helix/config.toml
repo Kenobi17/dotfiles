@@ -11,8 +11,8 @@ select = "underline"
 
 [editor.statusline]
 left = ["mode", "workspace-diagnostics", "diagnostics"]
-center = ["file-name", "separator", "spacer", "version-control", "file-modification-indicator"]
-right = [ "spinner","position-percentage", "spacer", "separator", "position"]
+center = ["file-name", "separator", "spacer", "version-control", "spacer", "file-modification-indicator"]
+right = [ "spinner", "selections", "position-percentage", "spacer", "separator", "position"]
 separator = "|"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
@@ -20,6 +20,8 @@ mode.select = "SELECT"
 
 [editor.file-picker]
 hidden = false
+# ignore = false
+# git-ignore = false
 
 [keys.insert]
 C-c = ["normal_mode", "collapse_selection"]
@@ -66,10 +68,12 @@ c = "toggle_comments"
 d = ":reset-diff-change"
 r = ":lsp-restart"
 o = ":config-open"
+f = ":format"
 R = ":config-reload"
 
 
 [keys.select.space.c]
 a = "code_action"
 c = "toggle_comments"
+f = "format_selections"
 d = ":reset-diff-change"
