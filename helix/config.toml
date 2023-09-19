@@ -63,10 +63,10 @@ a = "buffer_picker"
 q = ":quit"
 
 [keys.normal.space.c]
-a = "code_action"
-c = "toggle_comments"
+ a = "code_action"
+ k = "toggle_comments"
 d = ":reset-diff-change"
-r = ":lsp-restart"
+ r = ":lsp-restart"
 o = ":config-open"
 f = ":format"
 R = ":config-reload"
