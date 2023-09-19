@@ -68,7 +68,7 @@ map(
 map("n", "<leader>df", "<cmd>KickstartFormatToggle<cr>", { desc = "Disable autoformat" })
 
 -- open ex
-map("n", "<leader>ep", "<cmd>Ex<cr>", { desc = "Open Ex" })
+map("n", "<leader>e", "<cmd>Ex<cr>", { desc = "Open Ex" })
 
 map("n", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next search result" })
 map("x", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next search result" })
