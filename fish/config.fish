@@ -6,7 +6,7 @@ set -gx BROWSER brave
 set PATH $HOME/.local/share/bob/nvim-bin $PATH
 alias ll='ls -lA'
 alias rs='shutdown -r now'
-alias v='nvim'
+alias v='nvim .'
 alias hx='helix .'
 alias dip='dunstctl is-paused'
 alias tkx='tmux kill-server'
@@ -19,6 +19,7 @@ alias d='cd $(fd . '~' --type d --hidden --exclude node_modules --exclude .git |
 alias D='cd $(fd . '~' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo )'
 
 alias Hx='cd $(fd . '~' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo ) &&  hx'
+alias V='cd $(fd . '~' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo ) &&  v'
 
 # pnpm
 set -gx PNPM_HOME "/home/kenobi/.local/share/pnpm"
