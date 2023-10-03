@@ -13,6 +13,10 @@ alias tkx='tmux kill-server'
 alias tls='tmux ls'
 alias tks='tmux kill-session -t'
 alias st='shutdown -h now'
+alias gs='git status'
+alias gc='git commit -m'
+alias gp='git push origin'
+alias ga='git add'
 
 alias d='cd $(fd . '~' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo )'
 
