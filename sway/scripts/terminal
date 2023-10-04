@@ -1,17 +1,14 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-CONFIG="$HOME/.config/foot/foot.ini"
+CONFIG="$HOME/.config/alacritty/alacritty.yml"
 
-if [ "$1" == "--ranger"]; then
-	foot --config="$CONFIG" ranger
-elif [ "$1" == "--btop"]; then
-	foot --config="$CONFIG" btop
-elif [ "$1" == "-f" ]; then
-	foot --app-id='foot-float' --config="$CONFIG" tmux attach
-elif [ "$1" == "-f-new" ]; then
-	foot --app-id='foot-float' --config="$CONFIG" tmux
-elif [ "$1" == "-new" ]; then
-	foot --config="$CONFIG" tmux
+if [ "$1" == "--float" ]; then
+	alacritty -o font.size=18 --class 'alacritty-float,alacritty-float' --config-file "$CONFIG" -e tmux attach
+elif [ "$1" == "--float-new" ]; then
+	alacritty -o font.size=18 --class 'alacritty-float,alacritty-float' --config-file "$CONFIG" -e tmux
+elif [ "$1" == "--new" ]; then
+	alacritty -o font.size=18 --config-file "$CONFIG" -e tmux
 else
-	foot --config="$CONFIG" tmux attach
+	alacritty -o font.size=18 --config-file "$CONFIG" -e tmux attach
 fi
+
