@@ -3,8 +3,7 @@ set $mod Mod4
 set $alt Mod1
 
 ##-- Fonts (Global) ----------------------
-font pango:JetBrains Mono Nerd Font 10
-
+font pango:Iosevka Nerd Font 10
 
 ##-- Config files ------------------------
 include ~/.config/sway/sway-idle
@@ -17,7 +16,6 @@ include ~/.config/sway/sway-theme
 default_orientation horizontal
 swaybg_command swaybg
 swaynag_command swaynag
-mouse_warping output
 workspace_layout default
 focus_follows_mouse yes
 workspace_auto_back_and_forth yes
@@ -43,10 +41,10 @@ exec_always ~/.config/sway/scripts/startup
 ##-- Keybindings -------------------------
 
 # -- Terminal --
-bindsym $alt+Return 								exec --no-startup-id $term
-bindsym $alt+Shift+Return 					exec  --no-startup-id $term -f
-bindsym $alt+Control+Return 				exec --no-startup-id $term -new
-bindsym $alt+Control+Shift+Return 	exec --no-startup-id $term -f-new
+bindsym $alt+Return 							exec --no-startup-id $term          	
+bindsym $alt+Shift+Return 				exec --no-startup-id $term --float    	
+bindsym $alt+Control+Return 			exec --no-startup-id $term --new      	
+bindsym $alt+Control+Shift+Return exec --no-startup-id $term --float-new	
 
 # -- Apps --
 bindsym $alt+Shift+w 			exec $browser
