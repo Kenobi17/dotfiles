@@ -111,7 +111,8 @@ if vim.fn.has("nvim-0.9.0") == 1 then
   map("n", "<leader>ui", vim.show_pos, { desc = "Inspect Pos" })
 end
 
--- Terminal Mappings
+
+-- Terminal mappings
 map("t", "<esc><esc>", "<c-\\><c-n>", { desc = "Enter Normal Mode" })
 map("t", "<C-h>", "<cmd>wincmd h<cr>", { desc = "Go to left window" })
 map("t", "<C-j>", "<cmd>wincmd j<cr>", { desc = "Go to lower window" })
@@ -133,3 +134,6 @@ map("n", "<leader><tab><tab>", "<cmd>tabnew<cr>", { desc = "New Tab" })
 map("n", "<leader><tab>]", "<cmd>tabnext<cr>", { desc = "Next Tab" })
 map("n", "<leader><tab>d", "<cmd>tabclose<cr>", { desc = "Close Tab" })
 map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+
+-- search and replace
+map("n", "<leader>sr", ":%s@@@g<C-b><Right><Right><Right>", { desc = '[S]earch [r]eplace' })
