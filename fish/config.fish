@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-set -gx BROWSER brave
+set -gx BROWSER brave-browser-nightly
 set PATH $HOME/.local/share/bob/nvim-bin $PATH
 alias ll='ls -lA'
 alias rs='shutdown -r now'
