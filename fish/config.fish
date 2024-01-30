@@ -23,6 +23,7 @@ alias gpl='g pull origin'
 alias ga='g add .'
 alias gk='g add'
 alias gl='g log'
+alias kx='pkill -9'
 
 alias d='cd $(fd . '~' --type d --hidden --exclude node_modules --exclude .git | fzf-tmux -p --reverse | xargs echo )'
 

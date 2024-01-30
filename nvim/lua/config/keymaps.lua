@@ -14,16 +14,12 @@ map("n", "<C-u>", "<C-u>zz")
 map("x", "<leader>p", '"_dP', { desc = "Paste without yanking" })
 
 -- Copy to system clipboard
-map("n", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
-map("v", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
-map("n", "<leader>Y", '"+y', { desc = "Yank to system clipboard" })
-map("v", "<leader>Y", '"+y', { desc = "Yank to system clipboard" })
+map({ "v", "n" }, "<leader>y", '"+y', { desc = "Yank to system clipboard" })
+map({ "v", "n" }, "<leader>Y", '"+y', { desc = "Yank to system clipboard" })
 
 -- Delete without yanking
-map("n", "<leader>d", '"_d', { desc = "Delete without yanking" })
-map("v", "<leader>d", '"_d', { desc = "Delete without yanking" })
-map("n", "<leader>D", '"_d', { desc = "Delete without yanking" })
-map("v", "<leader>D", '"_d', { desc = "Delete without yanking" })
+map({ "v", "n" }, "<leader>d", '"_d', { desc = "Delete without yanking" })
+map({ "v", "n" }, "<leader>D", '"_d', { desc = "Delete without yanking" })
 
 -- Exit insert mode with JK
 map("i", "jk", "<ESC>", { desc = "Exit insert mode" })
@@ -70,12 +66,8 @@ map("n", "<leader>df", "<cmd>KickstartFormatToggle<cr>", { desc = "Disable autof
 -- open ex
 map("n", "<leader>e", "<cmd>Ex<cr>", { desc = "Open Ex" })
 
-map("n", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next search result" })
-map("x", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next search result" })
-map("o", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next search result" })
-map("n", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev search result" })
-map("x", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev search result" })
-map("o", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev search result" })
+map({ "x", "n", "o" }, "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next search result" })
+map({ "x", "n", "o" }, "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev search result" })
 
 -- Add undo break-points
 map("i", ",", ",<c-g>u")
