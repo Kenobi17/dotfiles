@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Create a new tmux window and get its ID
+new_window_id=$(tmux new-window -P -F "#{pane_id}")
+
+# Check if the window was created successfully
+if [ -z "$new_window_id" ]; then
+    echo "Failed to create a new tmux window."
+    exit 1
+fi
+
+# Send commands to the new window
+tmux send-keys -t "$new_window_id" "clear; echo 'Enter new window name: '; read window_name; tmux rename-window \"\$window_name\"; d" C-m
+
