@@ -43,12 +43,12 @@ rofi_font='Iosevka 10'
 rofi_icon='Papirus-Apps'
 
 # Terminal
-terminal_font_name='JetBrainsMono Nerd Font'
+terminal_font_name='Iosevka Nerd Font'
 terminal_font_size='10'
 
 # Geany
 geany_colors='wave.conf'
-geany_font='JetBrains Mono 10'
+geany_font='Iosevka 10'
 
 # Appearance
 gtk_font='Noto Sans 9'
@@ -76,7 +76,7 @@ picom_blur_method='none'
 picom_blur_strength='0'
 
 # I3WM
-i3wm_fonts='JetBrainsMono Nerd Font 10'
+i3wm_fonts='Iosevka Nerd Font 10'
 i3wm_border_size='2'
 i3wm_border_style='pixel'
 i3wm_gaps_inner='10'

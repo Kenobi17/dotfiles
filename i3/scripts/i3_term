@@ -9,11 +9,11 @@ DIR="$HOME/.config/i3"
 CONFIG="$DIR/alacritty/alacritty.toml"
 
 if [ "$1" == "--float" ]; then
-	alacritty -o font.size=14 --class 'alacritty-float,alacritty-float' --config-file "$CONFIG" -e tmux attach
+	alacritty  --class 'alacritty-float,alacritty-float' --config-file "$CONFIG" -e tmux attach
 elif [ "$1" == "--float-new" ]; then
-	alacritty -o font.size=14 --class 'alacritty-float,alacritty-float' --config-file "$CONFIG" -e tmux
+	alacritty  --class 'alacritty-float,alacritty-float' --config-file "$CONFIG" -e tmux
 elif [ "$1" == "--new" ]; then
-	alacritty -o font.size=14 --config-file "$CONFIG" -e tmux
+	alacritty  --config-file "$CONFIG" -e tmux
 else
-	alacritty -o font.size=14 --config-file "$CONFIG" -e tmux attach
+	alacritty  --config-file "$CONFIG" -e tmux attach
 fi
