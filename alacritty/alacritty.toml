@@ -1,4 +1,4 @@
-import = ["/home/kenobi/.config/i3/alacritty/colors.toml", "/home/kenobi/.config/i3/alacritty/fonts.toml"]
+import = ["/home/kenobi/.config/alacritty/colors.toml", "/home/kenobi/.config/alacritty/fonts.toml"]
 live_config_reload = true
 
 [cursor]
